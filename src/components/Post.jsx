@@ -33,7 +33,11 @@ export default function ({ img, title, description, buttons }) {
                 <p className="card-text">{description}</p>
 
                 {buttons.map((button) => (
-                    <a href="#" className={"btn " + ChooseTagColor(button)}>
+                    <a
+                        key={"tag-" + button}
+                        href="#"
+                        className={"btn " + ChooseTagColor(button)}
+                    >
                         {button}
                     </a>
                 ))}

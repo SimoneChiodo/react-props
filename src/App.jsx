@@ -20,11 +20,15 @@ function App() {
             <div className="wrapper d-flex flex-column">
                 <Header />
                 <main>
+                    <section id="post-list"></section>
                     <div className="row mb-5">
                         {posts
                             .filter((post) => post.published === true)
                             .map((post) => (
-                                <div className="col-6 mt-5 d-flex justify-content-center">
+                                <div
+                                    key={"post-" + post.id}
+                                    className="col-6 mt-5 d-flex justify-content-center"
+                                >
                                     <Post
                                         img={post.image}
                                         title={post.title}
