@@ -35,7 +35,7 @@ function App() {
                                 .map((post) => (
                                     <div
                                         key={"post-" + post.id}
-                                        className="col-6 mt-5 d-flex justify-content-center"
+                                        className="col-12 col-md-6 mt-5 d-flex justify-content-center"
                                     >
                                         <Post
                                             img={post.image}
@@ -53,7 +53,6 @@ function App() {
                         <div className="tags-container px-5">
                             {tags.map((tag) => (
                                 <>
-                                    {" "}
                                     <p
                                         key={"tag-" + tag}
                                         className={
