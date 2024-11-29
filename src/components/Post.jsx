@@ -1,6 +1,21 @@
 import styles from "./Post.module.css";
 
 export default function ({ img, title, description, buttons }) {
+    function ChooseTagColor(tag) {
+        switch (tag) {
+            case "html":
+                return "btn-success";
+            case "css":
+                return "btn-warning";
+            case "js":
+                return "btn-danger";
+            case "php":
+                return "btn-info";
+            default:
+                return "btn-light";
+        }
+    }
+
     return (
         <div className={styles.card}>
             <img
@@ -18,7 +33,7 @@ export default function ({ img, title, description, buttons }) {
                 <p className="card-text">{description}</p>
 
                 {buttons.map((button) => (
-                    <a href="#" className="btn btn-warning">
+                    <a href="#" className={"btn " + ChooseTagColor(button)}>
                         {button}
                     </a>
                 ))}

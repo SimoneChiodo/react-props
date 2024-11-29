@@ -20,7 +20,6 @@ function App() {
             <Header />
             <main>
                 <div className="post-container m-3 d-flex justify-content-center">
-                    {/* <Post /> */}
                     {posts
                         .filter((post) => post.published === true)
                         .map((post) => (
