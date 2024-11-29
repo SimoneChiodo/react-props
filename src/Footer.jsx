@@ -1,7 +1,7 @@
 export default function () {
     return (
-        <footer className="position-absolute bottom-0 start-0 w-100 bg-dark text-light py-5 px-2 mt-5">
-            <div className="d-flex justify-content-center align-items-center">
+        <footer className="bg-dark text-light py-5 px-2">
+            <div className="text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt molestias magnam voluptatum? Blanditiis voluptatibus
                 esse vero, cum perferendis sapiente. Aspernatur, ab voluptas

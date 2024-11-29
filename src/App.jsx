@@ -17,22 +17,24 @@ function App() {
 
     return (
         <>
-            <Header />
-            <main>
-                <div className="post-container m-3 d-flex justify-content-center">
-                    {posts
-                        .filter((post) => post.published === true)
-                        .map((post) => (
-                            <Post
-                                img={post.image}
-                                title={post.title}
-                                description={post.content}
-                                buttons={post.tags}
-                            />
-                        ))}
-                </div>
-            </main>
-            <Footer />
+            <div className="wrapper d-flex flex-column">
+                <Header />
+                <main className="">
+                    <div className="post-container m-3 d-flex justify-content-center">
+                        {posts
+                            .filter((post) => post.published === true)
+                            .map((post) => (
+                                <Post
+                                    img={post.image}
+                                    title={post.title}
+                                    description={post.content}
+                                    buttons={post.tags}
+                                />
+                            ))}
+                    </div>
+                </main>
+                <Footer />
+            </div>
         </>
     );
 }
