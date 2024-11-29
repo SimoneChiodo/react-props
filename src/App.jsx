@@ -19,17 +19,19 @@ function App() {
         <>
             <div className="wrapper d-flex flex-column">
                 <Header />
-                <main className="">
-                    <div className="post-container m-3 d-flex justify-content-center">
+                <main>
+                    <div className="row mb-5">
                         {posts
                             .filter((post) => post.published === true)
                             .map((post) => (
-                                <Post
-                                    img={post.image}
-                                    title={post.title}
-                                    description={post.content}
-                                    buttons={post.tags}
-                                />
+                                <div className="col-6 mt-5 d-flex justify-content-center">
+                                    <Post
+                                        img={post.image}
+                                        title={post.title}
+                                        description={post.content}
+                                        buttons={post.tags}
+                                    />
+                                </div>
                             ))}
                     </div>
                 </main>

@@ -9,3 +9,8 @@ body {
 main {
     flex-grow: 1;
 }
+
+.row {
+    margin: 0 !important;
+    margin-top: -2rem !important;
+}
