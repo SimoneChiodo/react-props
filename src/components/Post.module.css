@@ -20,3 +20,7 @@
 .card_body {
     padding: 1rem;
 }
+
+.card a {
+    margin-right: 1rem;
+}

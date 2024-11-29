@@ -4,6 +4,7 @@ import { useState } from "react";
 import Header from "./Header";
 import Post from "./components/Post";
 import Footer from "./Footer";
+import { posts } from "./data/posts";
 
 // Bootstrap CSS
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
@@ -19,7 +20,17 @@ function App() {
             <Header />
             <main>
                 <div className="post-container m-3 d-flex justify-content-center">
-                    <Post />
+                    {/* <Post /> */}
+                    {posts
+                        .filter((post) => post.published === true)
+                        .map((post) => (
+                            <Post
+                                img={post.image}
+                                title={post.title}
+                                description={post.content}
+                                buttons={post.tags}
+                            />
+                        ))}
                 </div>
             </main>
             <Footer />
