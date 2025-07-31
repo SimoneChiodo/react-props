@@ -1,8 +1,16 @@
-# React + Vite
+# Esercizio Componenti React: Blog Layout
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrizione
 
-Currently, two official plugins are available:
+In questo progetto sviluppato con React, viene strutturata una semplice interfaccia composta da più componenti:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Header**: componente dedicato all'intestazione della pagina.
+- **Footer**: componente a piè di pagina.
+- **Posts**: sezione centrale che include tre componenti distinti, ognuno rappresentante un singolo post.
+
+Ogni post è composto da:
+- Un'immagine placeholder
+- Un testo descrittivo
+- Una serie di pulsanti che simulano dei tag associati al contenuto
+
+L’obiettivo è esercitarsi nella composizione e riutilizzo dei componenti React, mantenendo una struttura modulare e facilmente estendibile.
